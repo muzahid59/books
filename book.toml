@@ -4,7 +4,7 @@ language = "bn"
 src = "chapters-md"
 
 [build]
-build-dir = "book"
+build-dir = "book/how-ai-makes-decisions"
 create-missing = false
 
 [output.html]

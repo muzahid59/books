@@ -25,6 +25,7 @@ jobs:
       - name: Install mdBook
         run: curl -sSL https://github.com/rust-lang/mdBook/releases/download/v0.5.4/mdbook-v0.5.4-x86_64-unknown-linux-gnu.tar.gz | tar xz
       - run: ./mdbook build
+      - run: echo '<meta http-equiv="refresh" content="0; url=how-ai-makes-decisions/">' > book/index.html
       - uses: actions/upload-pages-artifact@v5
         with:
           path: book
